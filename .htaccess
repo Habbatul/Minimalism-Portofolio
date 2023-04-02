@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L,QSA]
+RewriteRule ^get-data$ Services/Test/get-data [L]
+RewriteRule ^TodolistServiceTest$ Services/Test/TodolistServiceTest [L]

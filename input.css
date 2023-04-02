@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .bg-hqhan{
+        background: radial-gradient(circle, rgba(27, 185, 138, 1) 30%, rgba(0, 109, 116, 1) 90%);
+    }
+    .hijauTua{
+        background:rgba(15, 23, 42, 1);
+    }
+    .warna-heroSect{
+        background:rgba(0, 58, 60, 1);
+    }
+
+    .warna-navbar{
+        background: rgb(0,58,60);
+        background: linear-gradient(0deg, rgba(0,58,60,0.01) 0%, rgba(0,107,112,1) 100%);
+    }
+
+    .max-w-2xs{
+        max-width:15.5rem;
+    }
+    .mt-khusus{
+        margin-top:19rem;
+    }
+
+    .text-agakBesar{
+        font-size:5rem;
+        line-height:1.1;
+    }
+
+    .biruTua{
+        background: rgba(11, 39, 39, 1);
+    }
+
+    .right--10{
+        right:-20rem;
+    }
+
+    .mt--10{
+        top:-6.7rem;
+    }
+
+    @keyframes spin {
+        to {
+          transform: rotate(-360deg);
+        }
+      }
+      
+      .animate-spin-slow {
+        animation: spin 6s linear infinite;
+      }
+
+      .text-4-2xl {
+    font-size: 2.4rem/* 36px */;
+    line-height: 2.5rem/* 40px */;
+}
+
+.rotate--90 {
+    --tw-rotate: -90deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:translate-x--4 {
+    --tw-translate-x: -1rem/* 16px */;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.group:hover .group-hover\:translate-y--4 {
+    --tw-translate-y: -1rem/* 16px */;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media screen and (max-width: 900px) {
+    body {
+      size: 1100000px;
+    }
+  }
+
+  .h-100{
+  height : 27rem;
+  }
+  .h-uwu{
+    height : 19rem;
+  }
+  .w-tesla{
+    width:53rem;
+  }
+
+  .w-walter{
+    width:60rem;
+  }
+
+  }
