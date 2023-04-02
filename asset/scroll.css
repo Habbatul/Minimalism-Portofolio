@@ -68,3 +68,10 @@
   background-size: cover;
   filter: url('#goo');
 }
+
+
+@media screen and (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
