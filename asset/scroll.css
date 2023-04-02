@@ -54,12 +54,7 @@
         transform: translateX(-5rem);
     transition: all 1s;
     }
-  
-  @media screen and (max-width: 767px) {
-  .element {
-    overflow-x: scroll;
-  }
-}
+
 
     .scrollAnimate2.show2 {
     transform: translateX(0);
