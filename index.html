@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="en" class="scroll-smooth overflow-x-hidden" style="overflow-x:hidden;">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 <head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta charset="UTF-8" />
 	<link rel="icon" type="image/svg+xml" href="assets/favicon.63a26457.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Han's 3D Website</title>
 
     <script type="module" crossorigin src="assets/index.7d738596.js"></script>
@@ -45,7 +45,7 @@
     </style>
 </head>
 
-<body x-data="{ 'showModal': false, 'showModalDel' : false, selectedValue: '',selectedValue2: '', todos: [], overflow-x-hidden,
+<body x-data="{ 'showModal': false, 'showModalDel' : false, selectedValue: '',selectedValue2: '', todos: [],
 	fetchData() {
      fetch('get-data', {method:'post'})
        .then(response => response.json())
@@ -58,7 +58,7 @@
    init() {
        this.fetchData();
    }
-}" @keydown.escape="showModal = false" x-cloak class="warna-heroSect"  style="overflow-x:hidden;">
+}" @keydown.escape="showModal = false" x-cloak class="warna-heroSect overflow-x-hidden" >
    <!-- Awal -->
 
 	<!--nav bar -->
