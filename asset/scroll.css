@@ -78,7 +78,3 @@
   background-size: cover;
   filter: url('#goo');
 }
-
-html, body {
-  overflow-x:hidden 
-} 
