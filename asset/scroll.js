@@ -36,3 +36,17 @@ const observer3 = new IntersectionObserver((entries) => {
   
   const hiddenElements3 = document.querySelectorAll('.stackUsed');
   hiddenElements3.forEach((el) => observer3.observe(el));
+
+  //animasi4
+const observer4 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show4');
+    } else {
+      entry.target.classList.remove('show4');
+    }
+  });
+});
+
+const hiddenElements4 = document.querySelectorAll('.star');
+hiddenElements4.forEach((el) => observer4.observe(el));

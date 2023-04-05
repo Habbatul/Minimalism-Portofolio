@@ -5,5 +5,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.2.7"
+  },
+  "scripts": {
+    "dev": "alpinejs ./alpine.js"
   }
 }
