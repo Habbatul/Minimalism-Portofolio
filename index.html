@@ -62,12 +62,11 @@
 <body x-data="{ 'showModal': false, 'showModalDel' : false, 'showModalDetail' : false, selectedValue: '',selectedValue2: '', todos: [],
 	async fetchData() {
 		try {
-			const response = await fetch('https://hq.achmodez.tech/api/portofolio');
-			const data = await response.json();
-			console.log(data);
-			this.todos = data.data;
+		const response = await fetch('https://hq.achmodez.tech/api/portofolio', { mode: 'no-cors' });
+		console.log(response);
+		// Lakukan operasi yang diperlukan pada respons mentah di sini
 		} catch (error) {
-			console.error(error);
+		console.error(error);
 		}
 	},
 	async init() {
@@ -333,7 +332,7 @@
         <!-- content -->
         <div class="flex flex-col justify-center items-center">
             <div class="flex">
-                <img :src="'upload/' + todoGambar" :alt="todoGambar" class="w-full max-w-lg h-[28rem] md:max-h-full max-h-[18.5rem] object-cover shadow-[0_4px_10px_0.5px_rgba(0,0,0,0.5)] rounded-md">
+                <img :src="'https://hq.achmodez.tech/upload/' + todoGambar" :alt="todoGambar" class="w-full max-w-lg h-[28rem] md:max-h-full max-h-[18.5rem] object-cover shadow-[0_4px_10px_0.5px_rgba(0,0,0,0.5)] rounded-md">
             </div>
             <div class="flex justify-center pt-1">
 				<a :href = "todoLink">
