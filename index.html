@@ -60,18 +60,28 @@
 </head>
 
 <body x-data="{ 'showModal': false, 'showModalDel' : false, 'showModalDetail' : false, selectedValue: '',selectedValue2: '', todos: [],
-	async fetchData() {
-		try {
-		const response = await fetch('https://hq.achmodez.tech/api/portofolio', { method: 'post' });
-		console.log(response);
-		// Lakukan operasi yang diperlukan pada respons mentah di sini
-		} catch (error) {
-		console.error(error);
-		}
-	},
-	async init() {
-		await this.fetchData();
-   }, todoGambar:'', todoTitle:'',todoDescription:'',todoLink:'',
+fetchData() {
+	return new Promise(async (resolve, reject) => {
+	  try {
+		const response = await fetch('https://hq.achmodez.tech/api/portofolio');
+		const data = await response.json();
+		console.log(data); // Menampilkan data yang diterima dari API
+		resolve(data);
+	  } catch (error) {
+		reject(error);
+	  }
+	});
+  }
+  
+  async init() {
+	try {
+	  const data = await this.fetchData();
+	  this.todos = data.data;
+	} catch (error) {
+	  console.error(error);
+	}
+  }
+  , todoGambar:'', todoTitle:'',todoDescription:'',todoLink:'',
 }" @keydown.escape="showModal = false" x-cloak style="overflow-x:hidden;" x-init="fetchData()">
 <div class="bg-hero">
    <!-- Awal -->
