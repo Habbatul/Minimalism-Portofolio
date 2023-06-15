@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  
+  .transparent-thead {
+    background: linear-gradient(to bottom, rgba(27, 185, 138, 0.4), rgba(0, 109, 116, 0.4));
+  }
+  .transparent-border {
+    background: linear-gradient(to bottom, rgba(6, 55, 45, 0.5), rgba(0, 18, 19, 0.5));
+  }
+  .transparent-body {
+    background: linear-gradient(45deg, rgba(92, 197, 163, 0.4), rgba(0, 144, 156, 0.4));
+  }
+
     .bg-hqhan{
         background: radial-gradient(circle, rgba(27, 185, 138, 1) 30%, rgba(0, 109, 116, 1) 90%);
     }
