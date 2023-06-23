@@ -61,7 +61,7 @@
 <body x-data="{ 'showModal': false, 'showModalDel' : false, 'showModalDetail' : false, selectedValue: '',selectedValue2: '', todos: [],
 	async fetchData() {
 		try {
-			const response = await fetch('https://hq.achmodez.tech/api/portofolio', { method: 'post' });
+			const response = await fetch('http://hq.achmodez.tech/api/portofolio', { method: 'post' });
 			const data = await response.json();
 			console.log(data);
 			this.todos = data.data;
