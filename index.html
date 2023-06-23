@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en" class="scroll-smooth overflow-x-hidden">
 <head >
     <meta charset="UTF-8">
@@ -62,7 +61,7 @@
 <body x-data="{ 'showModal': false, 'showModalDel' : false, 'showModalDetail' : false, selectedValue: '',selectedValue2: '', todos: [],
 	async fetchData() {
 		try {
-			const response = await fetch('https://hq.achmodez.tech/api/portofolio');
+			const response = await fetch('http://hq.achmodez.tech/api/portofolio', { method: 'post' });
 			const data = await response.json();
 			console.log(data);
 			this.todos = data.data;
@@ -333,7 +332,7 @@
         <!-- content -->
         <div class="flex flex-col justify-center items-center">
             <div class="flex">
-                <img :src="'https://hq.achmodez.tech/upload/' + todoGambar" :alt="todoGambar" class="w-full max-w-lg h-[28rem] md:max-h-full max-h-[18.5rem] object-cover shadow-[0_4px_10px_0.5px_rgba(0,0,0,0.5)] rounded-md">
+                <img :src="'upload/' + todoGambar" :alt="todoGambar" class="w-full max-w-lg h-[28rem] md:max-h-full max-h-[18.5rem] object-cover shadow-[0_4px_10px_0.5px_rgba(0,0,0,0.5)] rounded-md">
             </div>
             <div class="flex justify-center pt-1">
 				<a :href = "todoLink">
@@ -380,29 +379,25 @@
 		  
 		">
 		<div class="flex flex-wrap justify-center">
-			<div class="absolute">
-			<div class="flex flex-wrap justify-center">
-			  <img  x-show="show1" src="asset/NTesla.svg" class="pointer-events-none 2xl:h-[27rem] lg:h-80 h-48 md:h-[20rem]" 
-				  x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-				  x-transition:leave="ease-out duration-500" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-
-			  <img x-show="show1" src="asset/TeslaQuotes.svg" class="pointer-events-none 2xl:ml-[6rem] 2xl:mt-48 2xl:h-[7.3rem] xl:h-[6rem] h-[1.8rem] mt-5 lg:mt-32 ml-5 lg:ml-10 md:h-[4rem] md:mt-[3rem] w-full lg:w-6/12"
-				  x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-				  x-transition:leave="ease-out duration-500" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+			<img  x-show="show1" src="asset/NTesla.svg" class="pointer-events-none 2xl:h-[27rem] lg:h-80 h-48 md:h-[20rem]" 
+				x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+				x-transition:leave="ease-out duration-500" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+				
+			<img x-show="show1" src="asset/TeslaQuotes.svg" class="pointer-events-none 2xl:ml-[6rem] 2xl:mt-48 2xl:h-[7.3rem] xl:h-[6rem] h-[1.8rem] mt-5 lg:mt-32 ml-5 lg:ml-10 md:h-[4rem] md:mt-[3rem] w-full lg:w-6/12"
+				x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+				x-transition:leave="ease-out duration-500" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
 
 
-			  <img x-show="show2" src="asset/WWhite.svg" class=" pointer-events-none 2xl:h-[27rem] lg:h-80 h-48 md:h-[20rem]"
-				  x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-				  x-transition:leave="ease-out duration-500" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-
-			  <img x-show="show2" src="asset/WaltQuotes.svg" class="pointer-events-none 2xl:ml-[6rem] 2xl:mt-48 2xl:h-[6rem] xl:h-[4rem] h-[1.8rem] mt-5 lg:mt-32 ml-5 lg:ml-10 md:h-[4rem] md:mt-[3rem] w-full lg:w-6/12"
-				  x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-				  x-transition:leave="ease-out duration-500" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"> 
-			  </div>
-			</div>
-  </div>
-		  <div class="flex -z-40 relative 2xl:h-[27rem] lg:h-80 md:h-[27rem] md:mt mx-w-[0px] h-[13.8rem] mt-5 ">&nbsp;</div>
-</div> 
+			<img x-show="show2" src="asset/WWhite.svg" class="pointer-events-none 2xl:h-[27rem] lg:h-80 h-48 md:h-[20rem]"
+				x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+				x-transition:leave="ease-out duration-500" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+				
+			<img x-show="show2" src="asset/WaltQuotes.svg" class="pointer-events-none 2xl:ml-[6rem] 2xl:mt-48 2xl:h-[6rem] xl:h-[4rem] h-[1.8rem] mt-5 lg:mt-32 ml-5 lg:ml-10 md:h-[4rem] md:mt-[3rem] w-full lg:w-6/12"
+				x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+				x-transition:leave="ease-out duration-500" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"> 
+		</div>
+				<div class="flex -z-40 relative 2xl:h-[27rem] lg:h-80 md:h-[27rem] md:mt mx-w-[0px] h-[13.8rem] mt-5 ">&nbsp;</div>
+	  </div>  
 
 
 	  
@@ -424,7 +419,7 @@
 			<template x-for="(todo, index) in todos" :key="index">
 				
 				<div @click="showModalDetail= true" x-on:click="selectedValue = todo.id" class="xl:min-w-[24.5rem] lg:mb-24 mb-10 mx-10 2xl:mx-10 xl:mx-10 overflow-hidden rounded-xl bg-hqhan max-w-[18rem] md:max-w-[24rem] md:min-w-[24rem] max-h-sm shadow-[0_2px_10px_1px_rgba(0,0,0,0.5)] hover:opacity-80 hover:cursor-pointer">	
-				<img :src="'https://hq.achmodez.tech/upload/' + todo.gambar" :alt="todo.gambar" class="pointer-events-none mx-auto mt-8  md:rounded-xl w-[320px] h-[240px] object-cover"/>
+				<img :src="'upload/' + todo.gambar" :alt="todo.gambar" class="pointer-events-none mx-auto mt-8  md:rounded-xl w-[320px] h-[240px] object-cover"/>
 					<div class="py-5 md:px-7 px-4 ">
 						<h3 x-text="todo.title" class="text-center mb-3 text-green-950 font-bold text-xl"></h3>
 						<div class="hijauTua rounded-lg">
