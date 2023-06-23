@@ -16,7 +16,8 @@ module.exports = {
       'Kaushan-Script' : ['Kaushan Script', 'cursive'],
     },
     screens:{
-        'sm': '640px',
+        //'sm': '640px',
+        'sm': '376px',
         // => @media (min-width: 640px) { ... }
   
         'md': '760px',

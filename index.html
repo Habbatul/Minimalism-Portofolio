@@ -11,6 +11,7 @@
     <title>Han's 3D Website</title>
 
     <script type="module" crossorigin src="asset/assets/index.725a3ebe.js"></script>
+	<script type="module" crossorigin src="asset/asset/index.b7a9797a.js"></script>
     <script src="asset/assets/cdn.js" defer></script>
 	<link href="asset/asset/output.css" rel="stylesheet">
 
@@ -24,6 +25,23 @@
 	
 
 	<style>
+		 #canvas2 {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: inset 0px 15px 8px -8px rgba(18, 59, 71, 1),
+                inset 0px -15px 8px -8px rgb(0, 0, 0);
+  background-color: #000000;
+}
+
+
+#form-container {
+  position: relative;
+
+
+}
+
         [x-cloak] {
 			display: none;
 		}
@@ -472,7 +490,33 @@ untuk akhir seluruh section  -->
 
 </div>
 
-<footer class="bg-gray-800 lg:pb-24 lg:pt-24 md:pb-20 md:pt-14 pb-20 pt-10">
+<!-- Perbuahan Card -->
+<form id="form-container" class="flex md:justify-center justify-end md:items-start items-center flex-col">
+	<canvas id="canvas2"></canvas>
+	<div class="bg-blue-500 p-4 sm:p-8 rounded-xl md:ml-36 xl:ml-44 2xl:ml-72 md:mb-0 sm:mb-20 mb-14" style="background-color: rgba(3, 101, 130, 0.5);backdrop-filter: blur(4px);">
+	  <h1 class="text-white text-center font-IBM-Plex-Sans text-xl md:text-4xl font-bold">Send Me a Message</h1>
+	  <div class="mt-6">
+
+		<ul class="text-center">
+		<li><input id="inputNama" type="text" class="rounded-2xl p-2 md:p-3 text-center font-IBM-Plex-Sans text-white 2xl:text-3xl xl:text-xl mt-2 xl:mt-4 md:mt-2 md:text-3xl text-xl"  
+			style="background-color: rgba(0, 0, 0, 0.5);backdrop-filter: blur(2px);" placeholder="Nama" /></li>
+
+		<li><input id="inputEmail" type="text" class="rounded-2xl p-2 md:p-3 text-center text-white 2xl:text-3xl xl:text-xl mt-2 xl:mt-4 md:mt-2 md:text-3xl text-xl" 
+			style="background-color: rgba(0, 0, 0, 0.5);backdrop-filter: blur(2px);" placeholder="Email" /></li>
+
+		<li><textarea id="inputPesan" class="rounded-2xl p-2 md:p-3 text-center text-white 2xl:text-3xl xl:text-xl mt-2 xl:mt-4 md:mt-2 md:text-3xl text-xl" 
+			style="background-color: rgba(0, 0, 0, 0.5);backdrop-filter: blur(2px);" placeholder="Pesan"></textarea></li>
+		</ul>
+
+		<div class="text-center mt-2 xl:mt-4 md:mt-2">
+		<button class="modal-close px-8 bg-black p-3 pb-4 rounded-lg text-white hover:bg-emerald-950 2xl:text-3xl xl:text-xl md:text-lg text-lg" name="updateItem">Login</button>
+		</div>
+	  </div>
+	</div>
+  </form>
+
+
+<footer class="bg-black lg:pb-24 lg:pt-24 md:pb-20 md:pt-14 pb-20 pt-10">
 	  <div class="lg:flex justify-center mx-5 lg:ml-1 ml-16 md:ml-20">
 
 
