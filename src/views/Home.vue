@@ -1,0 +1,65 @@
+<template>
+  <div class="container max-w-3xl mx-auto p-3 mt-4">
+    <h1 class="text-3xl font-serif mb-1">About Me</h1>
+    <p class="font-serif text-justify">My name is Habbatul Qolbi Hanifa, my stage name is <a href="" class="underline underline-offset-4 underline underline-offset-4-offset-4">@hq.han</a>. I'm adept at technology abstraction but also delve into low-level intricacies. My interests lie in backend engineering, computer graphics, web engineering, deployment, and serving as a CRUD Engineer. I deploy all my web and backend projects using an Ubuntu VPS with Docker, Nginx, and Apache. For frontend projects, I use GitHub Actions for CI/CD and GitHub Pages for deployment.</p>
+    <p class="mb-8 mt-2"><strong>Languages & Technologies i used : </strong> Java, Go, PHP, Javascript, Nginx, Docker, Ubuntu, Git & Github, MySQL, Postgres, Spring Framework, Codeigniter 4, Tailwind CSS, Vue JS, Vite, ThreeJS, Unity, Blender.</p>
+
+    <p class="font-serif text-[1.65rem] mb-1">
+      My Experience
+    </p>
+    <ul class="list-disc list-inside mb-4">
+      <li>
+        <strong>Web Developer Freelance</strong> at <strong><a href="https://jayadigital.tech/" target="_blank" class="underline underline-offset-4">Jaya Digital</a></strong> (July 2024 - Now)
+        <ul class="list-decimal pl-4 mb-2">
+          <li>Developed transaction features for Jaya Digital Store with several third parties using pure PHP.</li>
+          <li>Revamped the architecture and code of Jaya Digital's web to be more maintainable.</li>
+          <li>Implemented the Symfony HttpFoundation and Routing libraries in the application to streamline HTTP handling.</li>
+          <li>Implemented the PHP-DI library (PSR-11) to apply dependency injection.</li>
+        </ul>
+        <span><strong>Tech Stack:</strong> Tailwind, PHP, Symfony-Component, PHP-DI, Javascript</span>
+      </li>
+    </ul>
+    <p class="font-serif text-[1.65rem] mt-8 mb-1">
+      My Education
+    </p>
+    <ul class="list-decimal pl-4 mb-4">
+      <li>
+        <strong>Teknik Informatika, <a href="https://uad.ac.id/" target="_blank" class="underline underline-offset-4">Universitas Ahmad Dahlan, Indonesia</a></strong> (2020 - 2024)
+        <br />
+        GPA: 3.97 / 4.00
+        <br />
+        Specialized coursework: Dynamic Web Programming, Web Engineering, Game Development, Applied Computer Graphics, and Software Quality Assurance.
+      </li>
+      <li class="mt-1">
+        <strong>Back End Java, <a href="https://www.binaracademy.com/" target="_blank" class="underline underline-offset-4">Binar Academy (MSIB wave 5), Indonesia</a></strong> (Aug - Dec 2023)
+        <br />
+        Final Score: 4.7 / 5.0
+        <br />
+        Specialized topics: Restful API, Java 8, and Spring Framework.
+      </li>
+    </ul>
+    <p class="font-serif text-[1.65rem] mt-8 mb-1">
+      My Backend Projects
+    </p>
+    <ul class="list-decimal pl-4 mb-4">
+      <li><strong><a href="https://github.com/Habbatul/resumebuilder" target="_blank" class="underline underline-offset-4">Resume Builder</a> :</strong> Restful API for making resume builder app using Spring Framework deployed on Ubuntu server with Nginx and Docker.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/FinalProjectMOOC" target="_blank" class="underline underline-offset-4">MOOC / Online Course Simulation</a> :</strong> Restful API for online course app using Spring Framework deployed on Ubuntu server with Nginx and Docker.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/BinarFud" target="_blank" class="underline underline-offset-4">Food Shop Simulation</a> :</strong> Restful API for Food Shop app using Spring Framework deployed on Ubuntu server with Nginx and Docker.</li>
+    </ul>
+    <p class="font-serif text-[1.65rem] mt-8 mb-1">
+      My Experimental Projects
+    </p>
+    <ul class="list-decimal pl-4">
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/WhatsappExportViewer" target="_blank" class="underline underline-offset-4">Whatsapp Log Viewer</a> :</strong> Whatsapp Export Viewer. Reader app for whatsapp export chat .txt. This app is installable on your phone (PWA).</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/3D-Nostalgia" target="_blank" class="underline underline-offset-4">3D-Nostalgia</a> :</strong> A three-dimensional website with threejs for digital nostalgia featuring a lonely and liminal atmosphere.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/JavaFX-ArcadeGames" target="_blank" class="underline underline-offset-4">JavaFx Arcade Games</a> :</strong> Arcade games made with JavaFX, this is the first application I made while in college, there are two games in this .jar application.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/phpCA-Starter" target="_blank" class="underline underline-offset-4">PHP Clean Architecture Boilerplate</a> :</strong> Template project for clean architecture with PHP.</li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Home'
+}
+</script>
