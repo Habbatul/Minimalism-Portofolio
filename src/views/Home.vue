@@ -7,7 +7,7 @@
     <p class="font-serif text-[1.65rem] mb-1">
       My Experience
     </p>
-    <ul class="list-disc pl-6 mb-4">
+    <ul class="list-disc pl-4 mb-4">
       <li>
         <strong>Web Developer Freelance</strong> at <strong><a href="https://jayadigital.tech/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Jaya Digital</a></strong> (July 2024 - Now)
         <ul class="list-decimal pl-4 mb-2">
