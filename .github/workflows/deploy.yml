@@ -1,11 +1,11 @@
-name : Deploy
+name: Deploy
 
-on : 
-  push :
-    branches :
-      -main
+on:
+  push:
+    branches:
+      - main
 
-jobs :
+jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs :
         uses: bahmutov/npm-install@v1
 
       - name: Build project
-        run: npm run build
+        run: npx run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
@@ -31,11 +31,10 @@ jobs :
           name: production-files
           path: ./dist
 
-
-deploy :
-    name : Deploy
-    needs : build
-    runs-on : ubuntu-latest
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
     steps:
