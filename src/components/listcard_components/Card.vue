@@ -11,7 +11,7 @@
     <div class="px-5 pb-2 pt-3">
       <div class="font-semibold font-serif text-md mb-3 text-center">{{ title }}</div>
       <div 
-        class="text-gray-700 text-justify text-[0.9rem] overflow-y-scroll border-[0.3rem] border-r-[0rem] border-[#cac8c5] p-2" 
+        class="select-none text-gray-700 text-justify text-[0.9rem] overflow-y-scroll border-[0.3rem] border-r-[0rem] border-[#cac8c5] p-2" 
         :class="{'h-[7.1rem]': !isExpanded, 'h-auto': isExpanded}" 
         @dblclick="toggleExpand"
         @touchend="handleDoubleTap"
