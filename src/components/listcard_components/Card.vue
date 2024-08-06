@@ -14,12 +14,11 @@
         class="select-none text-gray-700 text-justify text-[0.9rem] overflow-y-scroll border-[0.3rem] border-r-[0rem] border-[#cac8c5] p-2" 
         :class="{'h-[7.1rem]': !isExpanded, 'h-auto': isExpanded}" 
         @dblclick="toggleExpand"
-        @touchend="handleDoubleTap"
       >
         {{ description }}
       </div>
     </div>
-    <div class="my-2 pb-2 mx-auto px-6">
+    <div class="my-2 pb-2 mx-auto px-6 select-none">
         <div class="flex flex-wrap">
             <div>
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-[0.7rem] font-semibold text-gray-700 mr-2 mb-2" v-for="tech in techStack.split(',')" :key="tech">{{ tech }}</span>
@@ -41,28 +40,12 @@ export default {
   data() {
     return {
       isExpanded: false,
-      lastTap: 0,
-      tapTimer: null,
+      tapCount:0,
     };
   },
   methods: {
     toggleExpand() {
       this.isExpanded = !this.isExpanded;
-    },
-    handleDoubleTap(event) {
-      const currentTime = new Date().getTime();
-      const tapLength = currentTime - this.lastTap;
-
-      if (tapLength < 300 && tapLength > 0) {
-        clearTimeout(this.tapTimer);
-        this.toggleExpand();
-        this.lastTap = 0;
-      } else {
-        this.lastTap = currentTime;
-        this.tapTimer = setTimeout(() => {
-          this.lastTap = 0;
-        }, 300);
-      }
     },
   },
 };
