@@ -1,7 +1,7 @@
 <template>
   <div class="container max-w-3xl mx-auto p-3 mt-4">
     <h1 class="text-[1.93rem] font-serif mb-1">About Me</h1>
-    <p class="font-serif text-justify" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">My name is Habbatul Qolbi Hanifa, my stage name is <a href="" class="underline underline-offset-4 underline-offset-4-offset-4 hover:text-red-600">@hq.han</a>. I'm adept at technology abstraction but also delve into low-level intricacies. My interests lie in backend engineering, computer graphics, web engineering, deployment, and serving as a CRUD Engineer. I deploy all my web and backend projects using an Ubuntu VPS with Docker, Nginx, and Apache. For frontend projects, I use GitHub Actions for CI/CD and GitHub Pages for deployment.</p>
+    <p class="font-serif text-justify" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">My name is Habbatul Qolbi Hanifa, my stage name is <a href="" class="underline underline-offset-4 underline-offset-4-offset-4 hover:text-red-600">@hq.han</a>. I'm adept at technology abstraction but also delve into low-level intricacies. My interests lie in backend engineering, computer graphics, web engineering, deployment, game development and serving as a CRUD Engineer. I deploy all my web and backend projects using an Ubuntu VPS with Docker, Nginx, and Apache. For frontend projects, I use GitHub Actions, GitHub Pages and Vercel for deployment.</p>
     <p class="mb-8 mt-3"><strong>Languages & Technologies i used : </strong> Java, Go, PHP, Javascript, Nginx, Docker, Ubuntu, Git & Github, MySQL, Postgres, Spring Framework, Codeigniter 4, Tailwind CSS, Vue JS, Vite, ThreeJS, Unity, Blender.</p>
 
     <p class="font-serif text-[1.65rem] mb-1">
