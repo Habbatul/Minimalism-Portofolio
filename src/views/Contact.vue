@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <li>
-                    <p class="font-serif text-[0.9rem] leading-5 text-black mt-3 md:mt-3">To get specific information use query param 'input'.</p>
+                    <p class="font-serif text-[0.9rem] leading-5 text-black mt-3 md:mt-[0.85rem]">To get specific information use query param 'input'.</p>
                 </li>
                 <div class="ml-[-1rem] relative border border-gray-300 bg-gray-100 rounded-md overflow-x-auto mt-2">
                     <div class="py-2 m-0 text-gray-900 whitespace-nowrap">
@@ -33,11 +33,19 @@
                     </div>
                 </div>
                 <li>
-                    <p class="font-serif text-[0.9rem] leading-5 text-black mt-3 md:mt-3">To send me a message, use curl like example below (not working yet).</p>
+                    <p class="font-serif text-[0.9rem] leading-5 text-black mt-3 md:mt-[0.85rem]">To send me a message, use curl like example below (not working yet).</p>
                 </li>
                 <div class="ml-[-1rem] relative border border-gray-300 bg-gray-100 rounded-md overflow-x-auto mt-2">
                     <div class="py-2 m-0 text-gray-900 whitespace-nowrap">
                         <code class="text-sm mx-2">curl -X POST https://porto.hqhan.my.id/submit-form -H "Content-Type: application/json" -d '{"massage":"write_your_massage"}'</code>
+                    </div>
+                </div>
+                <li>
+                    <p class="font-serif text-[0.9rem] leading-5 text-black mt-3 md:mt-[0.85rem]">If you use powershell in windows, use curl.exe because curl in PowerShell is an alias for Invoke-WebRequest.</p>
+                </li>
+                <div class="ml-[-1rem] relative border border-gray-300 bg-gray-100 rounded-md overflow-x-auto mt-2">
+                    <div class="py-2 m-0 text-gray-900 whitespace-nowrap">
+                        <code class="text-sm mx-2">curl.exe https://porto.hqhan.my.id/info/run.php</code>
                     </div>
                 </div>
             </ul>

@@ -15,7 +15,7 @@
 
     <FilterComponent :portfolios="portfolios" :showFilter="showFilter" @toggle-filter="toggleFilter" @filter="applyFilter" />
 
-    <div class="container mx-auto mt-10">
+    <div class="max-w-6xl mx-auto mt-10">
       <div v-if="initialLoading" class="flex justify-center mt-4">
         <div class="loader"></div>
       </div>
@@ -37,9 +37,9 @@
         <div class="loader"></div>
       </div>
 
-      <div v-if="!loading && hasMore && !initialLoading" class="flex justify-center md:mt-4">
+      <div v-if="!loading && hasMore && !initialLoading" class="flex justify-center mt-2 md:mt-4">
         <button
-          class="bg-white border border-black text-black py-2 px-4 hover:text-white hover:bg-black transition duration-100 mb-2 md:mb-6 text-xl md:text-2xl font-serif"
+          class="bg-white border border-black text-black py-2 px-4 hover:text-white hover:bg-black transition duration-100 mb-2 md:mb-[1.35rem] text-xl md:text-2xl font-serif"
           @click="loadMore"
         >
           Load More
@@ -67,7 +67,7 @@ export default {
       displayedPortfolios: [],
       showFilter: false,
       currentPage: 1,
-      itemsPerPage: 8,
+      itemsPerPage: 6,
       loading: false,
       initialLoading: true,
       hasMore: true
