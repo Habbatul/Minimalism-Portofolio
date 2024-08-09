@@ -1,7 +1,7 @@
 <template>
     <div class="container max-w-lg mx-auto p-3 mt-4 text-lg">
         <div class="w-fit mx-auto px-2">
-        <p class="font-serif text-[1.65rem] mb-2">
+        <p class="font-serif text-[1.65rem] mb-2 2xl:text-[1.75rem] 2xl:mb-[0.65rem]">
         Contact Me
         </p>
         <p class="font-serif text-[1.08rem] leading-[1.5rem]">You can see my content and contact me through several social media below.</p>
@@ -13,8 +13,8 @@
         </ul>
         </div>
 
-        <p class="px-2 font-serif text-[1.65rem] mb-3 mt-10 ">More...</p>
-        <div class="px-2 mb-3">
+        <p class="px-2 font-serif text-[1.65rem] 2xl:text-[1.75rem] mb-3 mt-10 ">More...</p>
+        <div class="px-2">
             <ul class="list-disc pl-4">
                 <li>
                     <p class="font-serif text-[0.9rem] leading-5 text-black">For more information use curl on Uri like below.</p>

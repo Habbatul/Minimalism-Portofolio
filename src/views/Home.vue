@@ -1,10 +1,10 @@
 <template>
-  <div class="container max-w-3xl mx-auto p-3 mt-4">
-    <h1 class="text-[1.93rem] font-serif mb-1">About Me</h1>
+  <div class="max-w-3xl mx-auto p-3 mt-4 2xl:text-[1.08rem] 2xl:max-w-[53rem] 2xl:mb-4">
+    <h1 class="text-[1.93rem] font-serif mb-1 2xl:text-[2.1rem]">About Me</h1>
     <p class="font-serif text-justify" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">My name is Habbatul Qolbi Hanifa, my stage name is <a href="" class="underline underline-offset-4 underline-offset-4-offset-4 hover:text-red-600">@hq.han</a>. I'm adept at technology abstraction but also delve into low-level intricacies. My interests lie in backend engineering, computer graphics, web engineering, deployment, game development and serving as a CRUD Engineer. I deploy all my web and backend projects using an Ubuntu VPS with Docker, Nginx, and Apache. For frontend projects, I use GitHub Actions, GitHub Pages and Vercel for deployment.</p>
     <p class="mb-8 mt-3"><strong>Languages & Technologies i used : </strong> Java, Go, PHP, Javascript, Nginx, Docker, Ubuntu, Git & Github, MySQL, Postgres, Spring Framework, Codeigniter 4, Tailwind CSS, Vue JS, Vite, ThreeJS, Unity, Blender.</p>
 
-    <p class="font-serif text-[1.65rem] mb-1">
+    <p class="font-serif text-[1.65rem] 2xl:text-[1.75rem] mb-1">
       My Experience
     </p>
     <ul class="list-disc pl-4 mb-4">
@@ -19,7 +19,7 @@
         <span><strong>Tech Stack:</strong> Tailwind, PHP, Symfony-Component, PHP-DI, Javascript</span>
       </li>
     </ul>
-    <p class="font-serif text-[1.65rem] mt-8 mb-1">
+    <p class="font-serif text-[1.65rem] 2xl:text-[1.75rem] mt-8 mb-1">
       My Education
     </p>
     <ul class="list-decimal pl-4 mb-4">
@@ -38,7 +38,7 @@
         Specialized topics: Restful API, Java 8, and Spring Framework.
       </li>
     </ul>
-    <p class="font-serif text-[1.65rem] mt-8 mb-1">
+    <p class="font-serif text-[1.65rem] 2xl:text-[1.75rem] mt-8 mb-1">
       My Backend Projects
     </p>
     <ul class="list-decimal pl-4 mb-4">
@@ -46,7 +46,7 @@
       <li class="mt-1"><strong><a href="https://github.com/Habbatul/FinalProjectMOOC" target="_blank" class="underline underline-offset-4 hover:text-red-600">MOOC / Online Course Simulation</a> :</strong> Restful API for online course app using Spring Framework deployed on Ubuntu server with Nginx and Docker.</li>
       <li class="mt-1"><strong><a href="https://github.com/Habbatul/BinarFud" target="_blank" class="underline underline-offset-4 hover:text-red-600">Food Shop Simulation</a> :</strong> Restful API for Food Shop app using Spring Framework deployed on Ubuntu server with Nginx and Docker.</li>
     </ul>
-    <p class="font-serif text-[1.65rem] mt-8 mb-1">
+    <p class="font-serif text-[1.65rem] 2xl:text-[1.75rem] mt-8 mb-1">
       My Experimental Projects
     </p>
     <ul class="list-decimal pl-4">

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="mb-1 2xl:mb-3">
     <h1 class="font-serif text-4xl text-center mt-6">My Project</h1>
-    <p class="font-serif text-sm md:text-base max-w-[38rem] text-center mt-4 px-3 mx-auto">
+    <p class="font-serif text-[0.93rem] leading-[1.3rem] md:text-base max-w-[38rem] text-center mt-4 px-3 mx-auto">
       Some projects I built during my programming journey include hobbies, portfolios, and professional work. You can filter the projects below and visit a project by clicking on its image. Double-click or double-tap the project description to expand it and read it fully without scrolling.
     </p>
     
@@ -37,9 +37,9 @@
         <div class="loader"></div>
       </div>
 
-      <div v-if="!loading && hasMore && !initialLoading" class="flex justify-center mt-2 md:mt-4">
+      <div v-if="!loading && hasMore && !initialLoading" class="flex justify-center mt-2">
         <button
-          class="bg-white border border-black text-black py-2 px-4 hover:text-white hover:bg-black transition duration-100 mb-2 md:mb-[1.35rem] text-xl md:text-2xl font-serif"
+          class="bg-white border border-black text-black py-2 px-4 hover:text-white hover:bg-black transition duration-100 text-xl md:text-2xl font-serif"
           @click="loadMore"
         >
           Load More
