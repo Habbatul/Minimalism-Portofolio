@@ -12,10 +12,10 @@
 }
  
 ::-webkit-scrollbar-thumb {
-    background:  #e01010;
+    background: #979694;
 }
  
 ::-webkit-scrollbar-thumb:hover {
-    background: #cc0000;
+    background: #979694;
     cursor : pointer;
 }
