@@ -22,7 +22,7 @@
 
       <div class="flex flex-wrap justify-center">
         <Card
-          class="mx-5 mb-5 md:mb-9"
+          class="mx-4 md:mx-5 mb-7 md:mb-9"
           v-for="item in displayedPortfolios"
           :key="item.id"
           :title="item.title"
