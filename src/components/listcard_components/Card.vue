@@ -13,7 +13,7 @@
       <div class="px-5 pb-5 pt-3">
         <div class="font-semibold font-serif text-md mb-3 text-center">{{ title }}</div>
         <div 
-          class="select-none text-gray-700 text-[0.9rem] overflow-y-scroll border-[2.5px] border-r-[0rem] border-black leading-[1.25rem] px-2 py-1 text-justify"
+          class="select-none text-gray-700 text-[0.9rem] overflow-y-scroll border-[0.15rem] border-r-[0rem] border-black leading-[1.25rem] px-2 py-1 text-justify"
           :class="{'h-[6.35rem]': !isExpanded, 'h-auto': isExpanded}" 
           @dblclick="toggleExpand"
         >

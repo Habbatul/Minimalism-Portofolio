@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-    width: 2.5px;
+    width: 0.15rem;
     height:0.35rem;
 }
  
@@ -12,10 +12,10 @@
 }
  
 ::-webkit-scrollbar-thumb {
-    background: #cc0000;
+    background:  #e01010;
 }
  
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff0000;
-    cursor :pointer;
+    background: #cc0000;
+    cursor : pointer;
 }
