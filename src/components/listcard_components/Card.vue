@@ -65,3 +65,23 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+::-webkit-scrollbar {
+    width: 0.15rem;
+    height:0.35rem;
+}
+ 
+::-webkit-scrollbar-track {
+    background: black;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #979694;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+    background: #979694;
+    cursor : pointer;
+}
+</style>
