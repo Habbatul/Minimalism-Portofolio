@@ -4,7 +4,7 @@
     <div class="bg-white border border-black max-w-[20rem] rounded overflow-hidden shadow-[0_0px_3px_1.3px_rgba(0,0,0,0.2)]">
       <div class="relative group px-5 cursor-pointer">
         <a :href="link" target="_blank">
-          <img class="w-full mx-auto mt-4 border-black border-[2px]" :src="gambar" :alt="title">
+          <img class="w-full mx-auto mt-4 border-black border-[2.5px]" :src="gambar" :alt="title">
           <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 mx-5 px-8 font-semibold">
             Tekan untuk menuju ke project
           </div>
@@ -13,8 +13,8 @@
       <div class="px-5 pb-5 pt-3">
         <div class="font-semibold font-serif text-md mb-3 text-center">{{ title }}</div>
         <div 
-          class="select-none text-gray-700 text-[0.9rem] overflow-y-scroll border-[2px] border-r-[0rem] border-black leading-[1.25rem] px-2 py-1 text-justify"
-          :class="{'h-[6.46rem]': !isExpanded, 'h-auto': isExpanded}" 
+          class="select-none text-gray-700 text-[0.9rem] overflow-y-scroll border-[2.5px] border-r-[0rem] border-black leading-[1.25rem] px-2 py-1 text-justify"
+          :class="{'h-[6.35rem]': !isExpanded, 'h-auto': isExpanded}" 
           @dblclick="toggleExpand"
         >
         {{ description }}
