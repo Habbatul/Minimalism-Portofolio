@@ -51,8 +51,8 @@
 
 <script>
 import axios from 'axios';
-import Card from '../components/listcard_components/Card.vue';
-import FilterComponent from '../components/listcard_components/FilterComponent.vue';
+import Card from '../components/project/Card.vue';
+import FilterComponent from '../components/project/FilterComponent.vue';
 
 export default {
   name: 'Portofolio',
