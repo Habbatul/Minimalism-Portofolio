@@ -16,7 +16,7 @@
           <li>Implemented the Symfony HttpFoundation and Routing libraries in the application to streamline HTTP handling.</li>
           <li>Implemented the PHP-DI library (PSR-11) to apply dependency injection.</li>
         </ul>
-        <span><strong>Tech Stack:</strong> Tailwind, PHP, Symfony-Component, PHP-DI, Javascript</span>
+        <span><strong>Tech Stack:</strong> PHP, Symfony-Component (Routes and HttpFoundation), PHP-DI, Javascript, Tailwind, Postcss, Browsersync</span>
       </li>
     </ul>
     <p class="font-serif text-[1.65rem] 2xl:text-[1.75rem] mt-8 mb-1">

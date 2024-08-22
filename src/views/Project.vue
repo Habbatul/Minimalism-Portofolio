@@ -27,7 +27,7 @@
           :key="item.id"
           :title="item.title"
           :description="item.description"
-          :gambar="`https://hqhan.my.id/upload/${item.gambar}`"
+          :gambar="`https://porto.hqhan.my.id/upload/${item.gambar}`"
           :techStack="item.techStack"
           :link="item.link"
         />
@@ -79,7 +79,7 @@ export default {
   methods: {
     async fetchPortfolios() {
       try {
-        const response = await axios.get('https://hqhan.my.id/api/portofolio');
+        const response = await axios.get('https://porto.hqhan.my.id/api/portofolio');
         if (response.data && response.data.status === 'success') {
           this.portfolios = response.data.data;
           this.filteredPortfolios = this.portfolios;
