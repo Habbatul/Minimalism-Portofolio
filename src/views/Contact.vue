@@ -1,5 +1,5 @@
 <template>
-    <div class="container max-w-lg mx-auto p-3 mt-4 text-lg">
+    <div class="container max-w-lg mx-auto p-7 mt-4 text-lg">
         <div class="w-fit mx-auto px-2">
         <p class="font-serif text-[1.65rem] mb-2 2xl:text-[1.75rem] 2xl:mb-[0.65rem]">
         Contact Me

@@ -18,7 +18,7 @@
       </div>
     </nav>
 
-    <div class="p-4">
+    <div>
       <slot></slot>
     </div>
 

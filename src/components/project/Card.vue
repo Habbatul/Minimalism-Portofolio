@@ -1,61 +1,70 @@
 <template>
-  <div>
-
-    <div class="bg-white border border-black max-w-[20rem] rounded overflow-hidden shadow-[0_0px_3px_1.3px_rgba(0,0,0,0.2)]">
-      <div class="relative group px-5 cursor-pointer">
+    <div class="inter bg-white border border-black max-w-[20rem] rounded overflow-hidden shadow-[0_0px_3px_1.3px_rgba(0,0,0,0.2)]">
+      <div v-if="images && images[0]" class="relative group px-5 cursor-pointer flex justify-center mt-2 md:mt-5">
         <a :href="link" target="_blank">
-          <img class="w-full mx-auto mt-4 border-black border-[2.5px]" :src="gambar" :alt="title">
-          <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 mx-5 px-8 font-semibold">
-            Tekan untuk menuju ke project
+          <div class="relative w-[9.25rem] h-[9.25rem] md:w-64 md:h-64 overflow-hidden border-2 border-black"> 
+            <img
+              class="object-cover w-full"
+              :src="images[0]"
+              :alt="name"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-8 font-semibold text-sm md:text-base"
+            >
+              Tekan untuk menuju ke project
+            </div>
           </div>
         </a>
       </div>
-      <div class="px-5 pb-5 pt-3">
-        <div class="font-semibold font-serif text-md mb-3 text-center">{{ title }}</div>
-        <div 
-          class="select-none text-gray-700 text-[0.9rem] overflow-y-scroll border-[0.15rem] border-r-[0rem] border-black leading-[1.25rem] px-2 py-1 text-justify"
-          :class="{'h-[6.35rem]': !isExpanded, 'h-auto': isExpanded}" 
-          @dblclick="toggleExpand"
-        >
-        {{ description }}
+
+
+      <div class="px-5 mb-4 pt-3">
+        <div class="mb-2 font-bold leading-[1.1rem] md:leading-5 text-base md:text-xl text-center">{{ name }}</div>
+        <div class="text-gray-500 leading-[1.1rem] md:leading-5 text-[0.85rem] md:text-base text-center px-1 md:px-10 inter-thin">{{ overview }}</div>
+      </div>
+
+      <a :href="`/project/${id}`" target="_blank">
+        <div class="px-3 md:px-5 mb-2 hover:text-red-500 hover:cursor-pointer transition-all">
+          <div class="py-1 md:py-2 border-y-[0.1rem] border-black text-[0.8rem] md:text-sm"> <span class="line-clamp-2">{{ description }}</span></div>
         </div>
+      </a>  
+
+      <div class="mx-3 md:mx-5 mb-4">
+      <p class="mt-1 text-[0.8rem] md:text-sm">
+        <span class="font-bold">Category : </span>
+        <span v-for="(category, index) in categories" :key="category">
+          {{ category }}<span v-if="index < categories.length - 1">, </span>
+        </span>
+      </p>
+
+      <p class="mb-2 text-[0.8rem] md:text-sm">
+        <span class="font-bold">Tags : </span>
+        <span v-for="(tag, index) in tags" :key="tag">
+          {{ tag }}<span v-if="index < tags.length - 1">, </span>
+        </span>
+      </p>
+
+        <div v-if="note" class="text-red-500 font-semibold text-[0.8rem] md:text-sm italic">*{{ note }}</div>
       </div>
     </div>
-
-    <div class="relative pt-0 pb-[0.5rem] z-[-1]">
-      <div class="absolute inset-0 flex items-center justify-center select-none text-xl">
-        |<span class="mx-10">|</span>|<span class="mx-10">|</span>|
-      </div>
-    </div>
-
-
-    <div class="bg-white border border-black max-w-[20rem] rounded overflow-hidden shadow-[0_0px_3px_1.3px_rgba(0,0,0,0.2)]">
-      <div class="mt-1 mb-[0.7rem] pt-[0.35rem] mx-auto px-6 select-none">
-        <p class="mb-[0.58rem] ml-1 font-serif underline underline-offset-4">Tech Stack : </p>
-          <div class="flex flex-wrap">
-              <div>
-              <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-[0.7rem] font-semibold text-gray-700 mr-[0.45rem] mb-[0.4rem]" v-for="tech in techStack.split(',')" :key="tech">{{ tech }}</span>
-              </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </template>
 
 <script>
 export default {
   props: {
-    title: String,
+    id: Number,
+    name: String,
+    overview: String,
     description: String,
-    gambar: String,
-    techStack: String,
+    note: String,
+    categories: Array,
+    tags: Array,
+    images: Array, // Mengakomodasi beberapa gambar
     link: String,
   },
   data() {
     return {
       isExpanded: false,
-      tapCount:0,
     };
   },
   methods: {
@@ -67,21 +76,19 @@ export default {
 </script>
 
 <style scoped>
-::-webkit-scrollbar {
-    width: 0.15rem;
-    height:0.35rem;
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+.inter {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 132;
+  font-style: normal;
 }
- 
-::-webkit-scrollbar-track {
-    background: black;
-}
- 
-::-webkit-scrollbar-thumb {
-    background: #979694;
-}
- 
-::-webkit-scrollbar-thumb:hover {
-    background: #979694;
-    cursor : pointer;
+
+.inter-thin {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 120;
+  font-style: normal;
 }
 </style>
