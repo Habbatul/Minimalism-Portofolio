@@ -70,6 +70,12 @@ export default {
     Card,
     FilterComponent,
   },
+  props: {
+    baseUrl: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       categories: [],
@@ -77,7 +83,7 @@ export default {
       projects: [],
       showFilter: false,
       currentCursor: 0,
-      itemsPerPage: 6, // Default limit untuk setiap fetch
+      itemsPerPage: 6,
       loading: false,
       initialLoading: true,
       hasMore: true,
@@ -91,7 +97,7 @@ export default {
   methods: {
     async fetchCategories() {
       try {
-        const response = await axios.get('http://dontknow/category/names');
+        const response = await axios.get(`${this.baseUrl}/category/names`);
         this.categories = response.data.categories;
       } catch (error) {
         console.error('Error fetching categories:', error);
@@ -102,7 +108,7 @@ export default {
 
       this.loading = true;
       try {
-        const response = await axios.get('http://dontknow/project', {
+        const response = await axios.get(`${this.baseUrl}/project`, {
           params: {
             category: this.selectedCategory || '',
             cursor: this.currentCursor,
@@ -112,14 +118,11 @@ export default {
 
         const data = response.data.projects || [];
         
-        // Jika data lebih kecil dari limit, artinya tidak ada data lagi
         this.hasMore = data.length === this.itemsPerPage;
 
-        // Tambahkan data baru ke daftar portfolio
         this.portfolios = [...this.portfolios, ...data];
         this.projects = this.portfolios;
 
-        // Update cursor untuk pengambilan data berikutnya
         this.currentCursor = data.length ? data[data.length - 1].id : this.currentCursor;
       } catch (error) {
         console.error('Error fetching portfolios:', error);

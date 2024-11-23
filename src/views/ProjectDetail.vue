@@ -73,11 +73,17 @@ export default {
     Swiper,
     SwiperSlide,
   },
-    setup() {
-        return {
-            modules: [Navigation, Pagination],
-        };
-    },
+  props: {
+    baseUrl: {
+      type: String,
+      required: true,
+    }
+  },
+  setup() {
+      return {
+          modules: [Navigation, Pagination],
+      };
+  },
   data() {
     return {
       project: {
@@ -96,7 +102,7 @@ export default {
   async mounted() {
     const { id } = this.$route.params;
     try {
-      const response = await axios.get(`http://dontknow/project/${id}`);
+      const response = await axios.get(`${this.baseUrl}/project/${id}`);
       this.project = response.data;
       console.log(this.project.images);
     } catch (error) {

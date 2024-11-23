@@ -59,7 +59,7 @@ export default {
     note: String,
     categories: Array,
     tags: Array,
-    images: Array, // Mengakomodasi beberapa gambar
+    images: Array,
     link: String,
   },
   data() {

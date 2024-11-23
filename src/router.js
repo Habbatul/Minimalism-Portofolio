@@ -6,9 +6,9 @@ import ProjectDetail from './views/ProjectDetail.vue';
 
 const routes = [
     { path: '/', component: Home },
-    { path: '/project', component: Project },
+    { path: '/project', component: Project, props: { baseUrl: "http://0.0.0.0:8080" } },
     { path: '/contact', component: Contact },
-    { path: '/project/:id', component: ProjectDetail, props: true }, // Routing untuk DetailProject
+    { path: '/project/:id', component: ProjectDetail, props: { baseUrl: "http://0.0.0.0:8080"} },
 ];
 
 const router = createRouter({
