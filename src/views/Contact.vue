@@ -17,7 +17,7 @@
         <div class="px-2">
             <ul class="list-disc pl-4">
                 <li>
-                    <p class="font-garamond text-[1.05rem] leading-5 text-black">For more information use curl on Uri like below.</p>
+                    <p class="font-garamond text-[1.13rem] leading-6 text-black">For more information use curl on Uri like below.</p>
                 </li>
                 <div class="ml-[-1rem] relative border border-[#cac8c5] bg-gray-100 rounded-md mt-2 overflow-hidden">
                     <div class="overflow-x-auto">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <li>
-                    <p class="font-garamond text-[1.05rem] leading-5 text-black mt-3 md:mt-[0.85rem]">To get specific information use query param 'input'.</p>
+                    <p class="font-garamond text-[1.13rem] leading-6 text-black mt-3 md:mt-[0.85rem]">To get specific information use query param 'input'.</p>
                 </li>
                 <div class="ml-[-1rem] relative border border-[#cac8c5] bg-gray-100 rounded-md mt-2 overflow-hidden">
                     <div class="overflow-x-auto">
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <li>
-                    <p class="font-garamond text-[1.05rem] leading-5 text-black mt-3 md:mt-[0.85rem]">To send me a message, use curl like example below (not working yet).</p>
+                    <p class="font-garamond text-[1.13rem] leading-6 text-black mt-3 md:mt-[0.85rem]">To send me a message, use curl like example below (not working yet).</p>
                 </li>
                 <div class="ml-[-1rem] relative border border-[#cac8c5] bg-gray-100 rounded-md mt-2 overflow-hidden">
                     <div class="overflow-x-auto">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <li>
-                    <p class="font-garamond text-[1.05rem] leading-5 text-black mt-3 md:mt-[0.85rem]">If you use powershell in windows, use curl.exe because curl in PowerShell is an alias for Invoke-WebRequest.</p>
+                    <p class="font-garamond text-[1.13rem] leading-6 text-black mt-3 md:mt-[0.85rem]">If you use powershell in windows, use curl.exe because curl in PowerShell is an alias for Invoke-WebRequest.</p>
                 </li>
                 <div class="ml-[-1rem] relative border border-[#cac8c5] bg-gray-100 rounded-md mt-2 overflow-hidden">
                     <div class="overflow-x-auto">
@@ -59,7 +59,7 @@
             </ul>
         </div>
     </div>
-    
+
 </template>
 
 <script>
