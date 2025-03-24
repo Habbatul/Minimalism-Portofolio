@@ -1,18 +1,52 @@
 <template>
   <div class="max-w-3xl mx-auto p-7 mt-4 2xl:text-[1.08rem] 2xl:max-w-[53rem] 2xl:mb-4">
-    <h1 class="text-[1.93rem] font-serif mb-1 2xl:text-[2.1rem]">About Me</h1>
-    <p class="font-serif text-justify" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">My name is Habbatul Qolbi Hanifa, my stage name is <a href="" class="underline underline-offset-4 underline-offset-4-offset-4 hover:text-red-600">@hq.han</a>. I'm adept at technology abstraction but also delve into low-level intricacies. My interests lie in backend engineering, computer graphics, web engineering, deployment, game development. I deploy all my webs and backend projects using an Ubuntu VPS with Docker, Nginx, and Apache. For frontend projects, I use GitHub Actions, GitHub Pages and Vercel for deployment.</p>
-    <p class="mb-8 mt-3"><strong>Languages & Technologies i used : </strong> Java, Spring Framework, Go, Fiber, Gorm, Nginx, Docker, Ubuntu, Git & Github, MySQL, Postgres, PHP, Tailwind CSS, Javascript, Vue JS, Vite, ThreeJS, Unity, Blender.</p>
+    <h1 class="text-[2.2rem] font-garamond mb-1 2xl:text-[2.3rem]">About Me</h1>
+    <div class="text-[1.2rem] leading-[1.65rem] md:text-base 2xl:text-[1.25rem] 2xl:leading-[1.8rem]">
+      <p class="font-garamond text-justify mb-2" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">My name is Habbatul Qolbi Hanifa, aka. <a href="" class="underline underline-offset-4 hover:text-red-600">@hq.han</a>. I enjoy exploring programming & technology in a concrete way but remain aware of the importance of abstraction in its application in the industry, especially since end users always need fast-delivered products. My interests lie in software engineering, computer graphics, game development, system programming.</p>
+      <p class="font-garamond text-justify mb-2" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">I have expertise in software development. I deploy all my backend projects using an Ubuntu VPS with Docker, Nginx, and Apache. For client-side web applications, I use Vercel and GitHub Pages, leveraging GitHub Actions for automated deployment. You can check out my projects on <a href="https://github.com/Habbatul" class="underline underline-offset-4 hover:text-red-600">GitHub</a> about the software and other projects I've developed.</p>
+      <p class="font-garamond text-justify" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">I have an interest and hobby in computer graphics and game development. For game development, I usually use Unity with C#, and when developing without a UI-based game engine, I prefer Ebiten with Golang. In computer graphics, I often use WebGL, typically through Three.js, as raw WebGL is too low-level for me. For asset creation, I use Photoshop for 2D graphics and Blender for 3D modeling. Additionally, I enjoy exploring anything related to programming, regardless of the field. Go to the  <router-link to="/project" class="underline underline-offset-4 hover:text-red-600">Project Page</router-link> to view my showcase project.</p>
+    </div>
+    <p class="mb-8 mt-4 text-gray-800">
+        <span class="font-semibold text-base md:text-lg text-gray-900">&#10148; Languages & Technologies I used : </span><br>
+        <span class="font-medium italic">Backend Service:</span> Java, Spring Framework, Go, Fiber, Gorm, MySQL, Postgress;
+        <span class="font-medium italic">Deployment:</span> Docker, Ubuntu, Nginx, Git & GitHub;  
+        <span class="font-medium italic">WebDev:</span> PHP, Tailwind CSS, JavaScript, Vue.js, Vite;  
+        <span class="font-medium italic">Others:</span> Three.js, Unity, Blender, Photoshop.
+    </p>
 
-    <p class="font-serif text-[1.65rem] 2xl:text-[1.75rem] mb-1">
+    <p class="font-garamond text-[1.75rem] 2xl:text-[1.9rem] mb-1">
+      My Education
+    </p>
+    <ul class="list-decimal pl-4 mb-4">
+      <li class="mb-3">
+        <strong>Teknik Informatika, <a href="https://uad.ac.id/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Universitas Ahmad Dahlan, Indonesia</a></strong> (2020 - 2025)
+        <br />
+        GPA: 3.97 / 4.00
+        <br />
+        Specialized coursework: Dynamic Web Programming, Web Engineering, Game Development, Applied Computer Graphics, and Software Quality Assurance.
+        <br />
+        &#10148; <a href="https://drive.google.com/file/d/1Cpg-E5taBI22envGrPCF8cEx8NJ9oCuY/view?usp=sharing" target="_blank" class="underline underline-offset-4 hover:text-red-600">Click here for the attachment.</a> 
+      </li>
+      <li class="mt-1">
+        <strong>Back End Java, <a href="https://www.binaracademy.com/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Binar Academy (MSIB wave 5), Indonesia</a></strong> (Aug - Dec 2023)
+        <br />
+        Final Score: 4.7 / 5.0
+        <br />
+        Specialized topics: Restful API, Unit Test, Java 8, and Spring Framework.
+        <br />
+        &#10148; <a href="https://drive.google.com/file/d/1vAnfe2E8op39FulabDXq4812YI_DkFi5/view?usp=sharing" target="_blank" class="underline underline-offset-4 hover:text-red-600">Click here for the attachment.</a> 
+      </li>
+    </ul>
+
+    <p class="font-garamond text-[1.75rem] 2xl:text-[1.9rem] mt-8 mb-1">
       My Experience
     </p>
     <ul class="list-disc pl-4 mb-4">
       <li>
-        <strong>Web Developer Freelance</strong> at <strong><a href="https://jayadigital.tech/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Jaya Digital</a></strong> (Now)
+        <strong>Web Developer Freelance</strong> at <strong><a href="https://jayadigital.tech/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Jaya Digital</a></strong> (Nov - Dec 2024)
         <p class="text-gray-600 text-base">Murung Raya, Kalimantan Tengah</p>
         <ul class="list-decimal pl-4 mb-2 mt-">
-          <li>Developed new features for Jaya Digital Store with several third parties.</li>
+          <li>Developed new features for Jaya Digital Store's content management web with several third-party integrations.</li>
           <li>Revamped the architecture and code of Jaya Digital's web to N-Tier (tested with PHPStan + PHPat).</li>
           <li>Implemented the Symfony HttpFoundation and Routing libraries in the application to streamline HTTP handling.</li>
           <li>Implemented the PHP-DI library (PSR-11) to apply dependency injection.</li>
@@ -20,42 +54,25 @@
         <span><strong>Tech Stack:</strong> PHP, Symfony-Component (Routes and HttpFoundation), PHP-DI, Javascript, Tailwind, Postcss, Browsersync</span>
       </li>
     </ul>
-    <p class="font-serif text-[1.65rem] 2xl:text-[1.75rem] mt-8 mb-1">
-      My Education
-    </p>
-    <ul class="list-decimal pl-4 mb-4">
-      <li>
-        <strong>Teknik Informatika, <a href="https://uad.ac.id/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Universitas Ahmad Dahlan, Indonesia</a></strong> (2020 - 2024)
-        <br />
-        GPA: 3.97 / 4.00
-        <br />
-        Specialized coursework: Dynamic Web Programming, Web Engineering, Game Development, Applied Computer Graphics, and Software Quality Assurance.
-      </li>
-      <li class="mt-1">
-        <strong>Back End Java, <a href="https://www.binaracademy.com/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Binar Academy (MSIB wave 5), Indonesia</a></strong> (Aug - Dec 2023)
-        <br />
-        Final Score: 4.7 / 5.0
-        <br />
-        Specialized topics: Restful API, Java 8, and Spring Framework.
-      </li>
-    </ul>
-    <p class="font-serif text-[1.65rem] 2xl:text-[1.75rem] mt-8 mb-1">
+
+    <p class="font-garamond text-[1.75rem] 2xl:text-[1.9rem] mt-8 mb-1">
       My Backend Projects
     </p>
     <ul class="list-decimal pl-4 mb-4">
-      <li><strong><a href="https://github.com/Habbatul/resumebuilder" target="_blank" class="underline underline-offset-4 hover:text-red-600">Resume Builder</a> :</strong> Restful API for making resume builder app using Spring Framework deployed on Ubuntu server with Nginx and Docker.</li>
-      <li><strong><a href="https://github.com/Habbatul/ProjectShowcase" target="_blank" class="underline underline-offset-4 hover:text-red-600">Project Showcase</a> :</strong> Restful API for making project showcase for your portofolio app using Go, Fiber, Gorm, Swaggo, Wire.</li>
-      <li class="mt-1"><strong><a href="https://github.com/Habbatul/FinalProjectMOOC" target="_blank" class="underline underline-offset-4 hover:text-red-600">MOOC / Online Course Simulation</a> :</strong> Restful API for online course app using Spring Framework deployed on Ubuntu server with Nginx and Docker.</li>
-      <li class="mt-1"><strong><a href="https://github.com/Habbatul/BinarFud" target="_blank" class="underline underline-offset-4 hover:text-red-600">Food Shop Simulation</a> :</strong> Restful API for Food Shop app using Spring Framework deployed on Ubuntu server with Nginx and Docker.</li>
+      <li><strong><a href="https://github.com/Habbatul/ProjectShowcase" target="_blank" class="underline underline-offset-4 hover:text-red-600">Project Showcase</a> :</strong> Restful API for making project showcase for your portofolio app using Go, Fiber, Gorm, Swaggo, and Wire.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/FinalProjectMOOC" target="_blank" class="underline underline-offset-4 hover:text-red-600">MOOC / Online Course Simulation</a> :</strong> Restful API for online course app using Spring Framework (Java 8) deployed on Ubuntu server with Nginx and Docker.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/BinarFud" target="_blank" class="underline underline-offset-4 hover:text-red-600">Food Shop Simulation</a> :</strong> Restful API for Food Shop app using Spring Framework (Java 8) deployed on Ubuntu server with Nginx and Docker.</li>
+      <li><strong><a href="https://github.com/Habbatul/resumebuilder" target="_blank" class="underline underline-offset-4 hover:text-red-600">Resume Builder</a> :</strong> Restful API for making resume builder app using Spring Framework (Java 21) deployed on Ubuntu server with Nginx and Docker.</li>
     </ul>
-    <p class="font-serif text-[1.65rem] 2xl:text-[1.75rem] mt-8 mb-1">
+
+    <p class="font-garamond text-[1.75rem] 2xl:text-[1.9rem] mt-8 mb-1">
       My Experimental Projects
     </p>
     <ul class="list-decimal pl-4">
-      <li class="mt-1"><strong><a href="https://github.com/Habbatul/3D-Nostalgia" target="_blank" class="underline underline-offset-4 hover:text-red-600">3D-Nostalgia</a> :</strong> A three-dimensional website with threejs for digital nostalgia featuring a lonely and liminal atmosphere.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/3D-Nostalgia" target="_blank" class="underline underline-offset-4 hover:text-red-600">3D-Nostalgia</a> :</strong> A three-dimensional website with webgl-threejs for digital nostalgia featuring a lonely and liminal atmosphere.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/indehell" target="_blank" class="underline underline-offset-4 hover:text-red-600">Indehell Profile Web</a> :</strong> A three-dimensional website for a clothing brand called <a class="underline underline-offset-4 hover:text-red-600" href="https://www.instagram.com/indehellstudio/">Indehell</a>, built using webgl-threejs, .glb compression with draco and meshopt.</li>
       <li class="mt-1"><strong><a href="https://github.com/Habbatul/hanPixel" target="_blank" class="underline underline-offset-4 hover:text-red-600">hanPixel</a> :</strong> A portofolio pixel art game, build with go + Ebiten.</li>
       <li class="mt-1"><strong><a href="https://github.com/Habbatul/JavaFX-ArcadeGames" target="_blank" class="underline underline-offset-4 hover:text-red-600">JavaFx Arcade Games</a> :</strong> Arcade games made with JavaFX, this my first application I made while in college, there are two games in this .jar application.</li>
-      <li class="mt-1"><strong><a href="https://github.com/Habbatul/phpCA-Starter" target="_blank" class="underline underline-offset-4 hover:text-red-600">PHP Clean Architecture Boilerplate</a> :</strong> Starter project for clean architecture with PHP, libraries in this boilerplate : Symfony HttpFoundation, Symfony Routes, PHP-DI (PSR 11) and testing with PHPStan + PHPat (for Architectural Test).</li>
     </ul>
   </div>
 </template>

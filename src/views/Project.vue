@@ -1,6 +1,6 @@
 <template>
   <div class="mb-1 2xl:mb-3">
-    <h1 class="font-serif text-4xl text-center mt-6">My Project</h1>
+    <h1 class="font-garamond text-4xl text-center mt-6">My Project</h1>
     <p class="font-serif text-[0.93rem] leading-[1.3rem] md:text-base max-w-[38rem] text-center mt-4 px-3 mx-auto">
       Some projects I built during my programming journey. You can filter the projects below and visit a project by clicking on its image. Klick the description to see detail of the projects you want to know.
     </p>
