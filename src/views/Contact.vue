@@ -13,7 +13,26 @@
         </ul>
         </div>
 
-        <p class="px-2 font-garamond text-[1.75rem] 2xl:text-[1.9rem] mb-3 mt-10 ">More...</p>
+        <!-- chat -->
+        <p class="px-2 font-garamond text-[1.75rem] 2xl:text-[1.9rem] mb-3 mt-10 ">Ask Me <span class="text-sm text-[#808080]">(Not Working Again)</span></p>
+            <div class="px-2">
+                <p class="font-garamond text-[1.08rem] leading-[1.5rem]">Please ask with <span class="font-semibold">indonesian language</span>. This is not an LLM, it's just a simple NLP chatbot using TF-IDF and Cosine Similarity. If your question doesn't have an answer, you can ask about "daftar topik" below to see the available topics.</p>
+            </div>
+            <ul class="text-[1.08rem] leading-[1.5rem] mt-4 font-garamond mx-2">
+                <li>               
+                    <label for="question" class="font-semibold">Question :</label>
+                </li><li class="flex justify-between mt-2">
+                     <input id="question" name="question" type="text" class="p-1 bg-gray-100/50 border border-[#cac8c5] w-full" placeholder="Example: Apa daftar topik yang bisa saya tanyakan?"> <button class="bg-gray-300 p-1 px-5 border border-gray-500 hover:bg-[#909090] hover:text-white hover:border-black">Ask</button>
+                </li><li class="mt-2">
+                      <label for="answer" class="font-semibold">Answer :</label>
+                </li><li>
+                    <textarea name="answer" id="answer" class="mt-1 p-1 bg-gray-100/50 border border-[#cac8c5] w-full" disabled placeholder="The answer will be here..."></textarea>
+                </li>
+            </ul>
+
+
+        <!-- fany -->
+        <p class="px-2 font-garamond text-[1.75rem] 2xl:text-[1.9rem] mb-3 mt-10 ">More... <span class="text-sm text-[#808080]">(Not Working Again)</span></p>
         <div class="px-2">
             <ul class="list-disc pl-4">
                 <li>

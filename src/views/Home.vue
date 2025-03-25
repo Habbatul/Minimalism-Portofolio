@@ -2,7 +2,7 @@
   <div class="max-w-3xl mx-auto p-7 mt-4 2xl:text-[1.08rem] 2xl:max-w-[53rem] 2xl:mb-4">
     <h1 class="text-[2.2rem] font-garamond mb-1 2xl:text-[2.3rem]">About Me</h1>
     <div class="text-[1.12rem] leading-[1.6rem] md:text-[1.26rem] md:leading-[1.8rem]">
-      <p class="font-garamond  text-justify mb-2" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">My name is Habbatul Qolbi Hanifa, aka. <a href="" class="underline underline-offset-3 hover:text-red-600">@hq.han</a>. I enjoy exploring programming & technology in a concrete way but remain aware of the importance of abstraction in its application in the industry, especially since end users always need fast-delivered products. My interests lie in software engineering, computer graphics, game development, system programming.</p>
+      <p class="font-garamond  text-justify mb-2" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">My name is Habbatul Qolbi Hanifa, aka. <a href="" class="underline underline-offset-3 hover:text-red-600">@hq.han</a>. I enjoy exploring programming & technology in a concrete way but remain aware of the importance of abstraction in its application in the industry, especially since end users always need fast-delivered products and programming teamwork need maintanable code. My interests lie in software engineering, computer graphics, game development, system programming.</p>
       <p class="font-garamond  text-justify mb-2" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">I have expertise in software development. I deploy all my backend projects using an Ubuntu VPS with Docker, Nginx, and Apache. For client-side web applications, I use Vercel and GitHub Pages, leveraging GitHub Actions for automated deployment. You can check out my projects on <a href="https://github.com/Habbatul" class="underline underline-offset-3 hover:text-red-600">GitHub</a> about the software and other projects I've developed.</p>
       <p class="font-garamond  text-justify" style="hyphens: auto;-webkit-hyphens: auto;-ms-hyphens: auto;">I have an interest and hobby in computer graphics and game development. For game development, I usually use Unity with C#, and when developing without a UI-based game engine, I prefer Ebiten with Golang. In computer graphics, I often use WebGL, typically through Three.js, as raw WebGL is too low-level for me. For asset creation, I use Photoshop for 2D graphics and Blender for 3D modeling. Additionally, I enjoy exploring anything related to programming, regardless of the field. Go to the  <router-link to="/project" class="underline underline-offset-3 hover:text-red-600">Project Page</router-link> to view my showcase project.</p>
     </div>
@@ -19,11 +19,11 @@
     </p>
     <ul class="list-decimal pl-4 mb-4">
       <li class="mb-3">
-        <strong>Teknik Informatika, <a href="https://uad.ac.id/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Universitas Ahmad Dahlan, Indonesia</a></strong> (2020 - 2025)
+        <strong>Sarjana Informatika, <a href="https://uad.ac.id/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Universitas Ahmad Dahlan, Indonesia</a></strong> (2020 - 2025)
         <br />
         GPA: 3.97 / 4.00
         <br />
-        Specialized coursework: Dynamic Web Programming, Web Engineering, Game Development, Applied Computer Graphics, and Software Quality Assurance.
+        Specialized coursework: Dynamic Web Programming, Web Engineering, Game Development, Applied Computer Graphics, and Software Quality Assurance (9 Semesters due to a delay caused by a subject I had not taken to achieve 144 sks).
         <br />
         &#10148; <a href="https://drive.google.com/file/d/1Cpg-E5taBI22envGrPCF8cEx8NJ9oCuY/view?usp=sharing" target="_blank" class="underline underline-offset-4 hover:text-red-600">Click here for the attachment.</a> 
       </li>
@@ -43,7 +43,7 @@
     </p>
     <ul class="list-disc pl-4 mb-4">
       <li>
-        <strong>Web Developer Freelance</strong> at <strong><a href="https://jayadigital.tech/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Jaya Digital</a></strong> (Nov - Dec 2024)
+        <strong>Web Developer Freelance</strong> at <strong><a href="https://jayadigital.tech/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Jaya Digital</a></strong> (Jul - Dec 2024)
         <p class="text-gray-600 text-base">Murung Raya, Kalimantan Tengah</p>
         <ul class="list-decimal pl-4 mb-2 mt-">
           <li>Developed new features for Jaya Digital Store's content management web with several third-party integrations.</li>
@@ -60,8 +60,8 @@
     </p>
     <ul class="list-decimal pl-4 mb-4">
       <li><strong><a href="https://github.com/Habbatul/ProjectShowcase" target="_blank" class="underline underline-offset-4 hover:text-red-600">Project Showcase</a> :</strong> Restful API for making project showcase for your portofolio app using Go, Fiber, Gorm, Swaggo, and Wire.</li>
-      <li class="mt-1"><strong><a href="https://github.com/Habbatul/FinalProjectMOOC" target="_blank" class="underline underline-offset-4 hover:text-red-600">MOOC / Online Course Simulation</a> :</strong> Restful API for online course app using Spring Framework (Java 8) deployed on Ubuntu server with Nginx and Docker.</li>
-      <li class="mt-1"><strong><a href="https://github.com/Habbatul/BinarFud" target="_blank" class="underline underline-offset-4 hover:text-red-600">Food Shop Simulation</a> :</strong> Restful API for Food Shop app using Spring Framework (Java 8) deployed on Ubuntu server with Nginx and Docker.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/FinalProjectMOOC" target="_blank" class="underline underline-offset-4 hover:text-red-600">MOOC / Online Course Simulation</a> :</strong> Restful API for online course app using Spring Framework (Java 8) deployed on Ubuntu server with Nginx and Docker. This project is a submission for the Binar Academy Final Project.</li>
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/BinarFud" target="_blank" class="underline underline-offset-4 hover:text-red-600">Food Shop Simulation</a> :</strong> Restful API for Food Shop app using Spring Framework (Java 8) deployed on Ubuntu server with Nginx and Docker. This project is a submission for the Binar Academy Challenge.</li>
       <li><strong><a href="https://github.com/Habbatul/resumebuilder" target="_blank" class="underline underline-offset-4 hover:text-red-600">Resume Builder</a> :</strong> Restful API for making resume builder app using Spring Framework (Java 21) deployed on Ubuntu server with Nginx and Docker.</li>
     </ul>
 
@@ -69,8 +69,8 @@
       My Experimental Projects
     </p>
     <ul class="list-decimal pl-4">
+      <li class="mt-1"><strong><a href="https://github.com/Habbatul/Indehell" target="_blank" class="underline underline-offset-4 hover:text-red-600">Indehell Profile Web</a> :</strong> 3D Website with interactive animation for a clothing brand called <a class="underline underline-offset-2 hover:text-red-600" href="https://www.instagram.com/indehellstudio/">Indehell</a>, built using webgl-threejs (vanilla), .glb compression with draco and meshopt.</li>
       <li class="mt-1"><strong><a href="https://github.com/Habbatul/3D-Nostalgia" target="_blank" class="underline underline-offset-4 hover:text-red-600">3D-Nostalgia</a> :</strong> 3D website (like a video game) with webgl-threejs (vanilla) for digital nostalgia featuring a lonely and liminal atmosphere.</li>
-      <li class="mt-1"><strong><a href="https://github.com/Habbatul/indehell" target="_blank" class="underline underline-offset-4 hover:text-red-600">Indehell Profile Web</a> :</strong> 3D Website with interactive animation for a clothing brand called <a class="underline underline-offset-2 hover:text-red-600" href="https://www.instagram.com/indehellstudio/">Indehell</a>, built using webgl-threejs (vanilla), .glb compression with draco and meshopt.</li>
       <li class="mt-1"><strong><a href="https://github.com/Habbatul/hanPixel" target="_blank" class="underline underline-offset-4 hover:text-red-600">hanPixel</a> :</strong> Portofolio 2D pixel art game, build with go + Ebiten. Built to .wasm file, deployed in Github Pages.</li>
       <li class="mt-1"><strong><a href="https://github.com/Habbatul/JavaFX-ArcadeGames" target="_blank" class="underline underline-offset-4 hover:text-red-600">JavaFx Arcade Games</a> :</strong> Arcade games made with JavaFX, this my first application I made while in college, there are two games in this .jar application.</li>
     </ul>
