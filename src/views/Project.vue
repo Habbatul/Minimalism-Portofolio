@@ -7,7 +7,7 @@
 
     <a
       href="#"
-      class="fixed bottom-4 right-4 md:right-8 border-black bg-white border-[0.15rem] text-black py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg text-center cursor-pointer transition duration-100 hover:bg-black hover:text-white z-50 text-[0.8rem] text-base md:text-lg font-serif"
+      class="fixed bottom-4 right-4 md:right-8 border-black bg-[#e6cdb7] border-[0.15rem] text-black py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg text-center cursor-pointer transition duration-100 hover:bg-black hover:text-white z-50 text-[0.8rem] text-base md:text-lg font-serif"
       @click="toggleFilter"
     >
       Filter Project
@@ -49,7 +49,7 @@
 
       <div v-if="!loading && hasMore && !initialLoading" class="flex justify-center mt-2">
         <button
-          class="bg-white border border-black text-black py-2 px-4 hover:text-white hover:bg-black transition duration-100 text-xl md:text-2xl font-serif"
+          class="bg-[#f5e5d3]/70 border border-black text-black py-2 px-4 hover:text-white hover:bg-black transition duration-100 text-xl md:text-2xl font-serif"
           @click="loadMore"
         >
           Load More

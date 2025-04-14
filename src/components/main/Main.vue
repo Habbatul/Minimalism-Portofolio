@@ -27,7 +27,7 @@
     </div>
 
     <footer class="px-1 mx-2 mt-3 flex flex-col items-center justify-center">
-<div class="border-black border-t-[0.1rem] mx-auto max-w-lg w-full"></div>
+      <div class="border-black border-t-[0.1rem] mx-auto max-w-lg w-full"></div>
       <div class="mt-3 text-sm 2xl:text-[0.9rem] text-center max-w-lg mx-auto text-black ">
         <span class="cursor-pointer hover:underline underline-offset-4">© Habbatul Qolbi H.</span> 2024 – {{ getCurrentYear() }} | <a href="https://github.com/Habbatul" class="hover:underline underline-offset-4">Github</a> | <a href="https://www.linkedin.com/in/habbatul/" class="hover:underline underline-offset-4  py-4 my-4">Linkedin</a>
       </div>

@@ -1,6 +1,6 @@
 <template>
-  <div v-if="showFilter" class="fixed inset-0 bg-gray-800 bg-opacity-70 flex items-center justify-center z-50" @click="handleOutsideClick">
-    <div id="card" class="bg-white p-6 rounded shadow-lg max-w-sm w-full mx-10" @click.stop>
+  <div v-if="showFilter" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" @click="handleOutsideClick">
+    <div id="card" class="bg-[#f6eee3] p-6 rounded shadow-lg max-w-sm w-full mx-10" @click.stop>
       <div class="border-b-[0.1rem] border-black mb-4 mx-3">
         <h1 class="font-serif text-center text-2xl md:text-[1.6rem]">Projects Categories</h1>
         <p class="mb-2 mt-1 text-[0.6rem] md:text-[0.7rem] text-center font-serif">

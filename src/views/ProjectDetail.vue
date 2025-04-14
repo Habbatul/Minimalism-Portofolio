@@ -1,14 +1,16 @@
 <template>
 
-  <div class="flex justify-center w-full">
-    <div class="max-w-2xl px-7 md:px-20 w-full mt-10">
-        <div class="mb-5 mt-2">
+  <div class="flex justify-center w-full mb-8">
+    <div class="max-w-4xl px-7 md:px-20 w-full mt-5">
+        <a class="text-md hover:text-red-500 underline underline-offset-2 font-garamond text-xl ml-[-0.5rem] md:ml-[2rem] xl:ml-[1.5rem]" :href="`/project`">Back to List </a>
+
+        <div class="mb-5 mt-3 mx-[-0.5rem] md:mx-[0.6rem] rounded-3xl border-2 border-black bg-[#f5f0e6]">
             <swiper
                 :modules="modules"
                 :slides-per-view="1"
                 navigation
                 :pagination="{ clickable: true }"
-                class="w-full max-w-lg h-64 md:h-96 mx-auto bg-black"
+                class="w-full h-64 md:h-96 mx-auto rounded-2xl"
             >
                 <swiper-slide 
                 v-for="(image, index) in project.images" 
@@ -18,41 +20,37 @@
                 <img 
                     :src="image" 
                     :alt="'Image ' + index" 
-                    class="h-full max-h-full w-auto object-contain bg-black"
+                    class="h-full max-h-full w-auto object-contain"
+                    style="user-select: none;-ms-user-select: none;-webkit-user-select: none;"
                 >
                 </swiper-slide>
             </swiper>
 
         </div>
-        
-        <p> <span class="text-2xl font-bold">{{ project.name }}</span></p>
-        <p>{{ project.overview }}</p>
-        <a :href="project.url_project" target="_blank" class="text-red-500 underline">Visit Project</a>
+                
+        <p> <span class="text-3xl font-bold font-garamond">{{ project.name }}</span></p>
+        <p class="font-garamond text-[1.1rem] font-medium mb-1">{{ project.overview }}</p>
+        <a :href="project.url_project" target="_blank" class="text-red-800 hover:text-red-500 underline font-medium font-garamond text-lg">Visit The Project</a>
         <div class="my-4">
-        <h2 class="text-xl font-semibold">About this project:</h2>
-        <p>{{ project.description }}</p>
+        <h2 class="text-2xl font-semibold font-garamond">About this project:</h2>
+        <p class="font-garamond text-lg mt-2">{{ project.description }}</p>
         </div>
-        <div class="mb-4">
 
-        </div>
-        <div class="mb-4">
+        <div class="mb-4 mt-6">
 
-            <p class="mb-1">
-                <span class="font-semibold">Tags : </span>
-                <span v-for="(tag, index) in project.tags" :key="tag">
+            <p class="mb-1 ">
+                <span class="font-bold font-garamond text-lg">Tags : </span>
+                <span class="font-garamond font-medium" v-for="(tag, index) in project.tags" :key="tag">
                 {{ tag }}<span v-if="index < project.tags.length - 1">, </span>
                 </span>
             </p>
 
             <p>
-                <span class="font-semibold">Category : </span>
-                <span v-for="(category, index) in project.categories" :key="category">
+                <span class="font-bold font-garamond text-lg">Category : </span>
+                <span class="font-garamond font-medium" v-for="(category, index) in project.categories" :key="category">
                 {{ category }}<span v-if="index < project.categories.length - 1">, </span>
                 </span>
             </p>
-
-        </div>
-        <div class="mt-4">
 
         </div>
     </div>
@@ -104,7 +102,7 @@ export default {
     try {
       const response = await axios.get(`${this.baseUrl}/project/${id}`);
       this.project = response.data;
-      console.log(this.project.images);
+
     } catch (error) {
       console.error('Failed to fetch project:', error);
     }
@@ -115,7 +113,8 @@ export default {
 <style>
 .swiper-button-next,
 .swiper-button-prev {
-    color: white  !important;
+    color: rgb(84, 84, 84)  !important;
+    font-weight: 800;
 }
 .swiper-pagination-bullet-active{
     background: white !important;
@@ -124,5 +123,6 @@ export default {
 .swiper-pagination-bullet{
     opacity: 0.5;
     background: rgb(255, 255, 255);
+    border: 1px solid black;
 }
 </style>
