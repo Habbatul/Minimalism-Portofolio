@@ -4,7 +4,7 @@
     <div class="max-w-4xl px-7 md:px-20 w-full mt-5">
         <a class="text-md hover:text-red-500 underline underline-offset-2 font-garamond text-xl ml-[-0.5rem] md:ml-[2rem] xl:ml-[1.5rem]" :href="`/project`">Back to List </a>
 
-        <div class="mb-5 mt-3 mx-[-0.5rem] md:mx-[0.6rem] rounded-3xl border-2 border-black bg-[#f5f0e6]">
+        <div class="mb-5 mt-3 mx-[-0.5rem] md:mx-[0.6rem] rounded-3xl border-2 border-black bg-[#eae0d6]">
             <swiper
                 :modules="modules"
                 :slides-per-view="1"

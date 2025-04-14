@@ -6,9 +6,9 @@ import ProjectDetail from './views/ProjectDetail.vue';
 
 const routes = [
     { path: '/', component: Home },
-    { path: '/project', component: Project, props: { baseUrl: "localhost:8080" } },
-    { path: '/contact', component: Contact, props: { baseUrl: "localhost:8000" } },
-    { path: '/project/:id', component: ProjectDetail, props: { baseUrl: "localhost:8080"} },
+    { path: '/project', component: Project, props: { baseUrl: "http://127.0.0.1:8080" } },
+    { path: '/contact', component: Contact, props: { baseUrl: "http://127.0.0.1:8000" } },
+    { path: '/project/:id', component: ProjectDetail, props: { baseUrl: "http://127.0.0.1:8080"} },
 ];
 
 const router = createRouter({
