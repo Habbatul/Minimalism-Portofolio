@@ -75,6 +75,4 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
-</style>
+
