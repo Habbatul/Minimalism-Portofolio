@@ -19,7 +19,7 @@
     </p>
     <ul class="list-decimal pl-4 mb-4">
       <li class="mb-3">
-        <span class="font-bold">Sarjana Informatika, <a href="https://uad.ac.id/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Universitas Ahmad Dahlan, Indonesia</a></span> (Feb 2020 - Mar 2025)
+        <span class="font-bold">Sarjana Informatika, <a href="https://uad.ac.id/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Universitas Ahmad Dahlan, Indonesia</a></span> <span class="whitespace-nowrap">(Feb 2020 - Mar 2025)</span>
         <br />
         <span class="font-bold">GPA:</span> 3.97 / 4.00
         <br />
@@ -30,7 +30,7 @@
         &#10148; <a href="https://drive.google.com/file/d/1Cpg-E5taBI22envGrPCF8cEx8NJ9oCuY/view?usp=sharing" target="_blank" class="underline underline-offset-4 hover:text-red-600">Click here for the attachment.</a> 
       </li>
       <li class="mt-1">
-        <span class="font-bold">Back End Java, <a href="https://www.binaracademy.com/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Binar Academy (MSIB wave 5), Indonesia</a></span> (Aug - Dec 2023)
+        <span class="font-bold">Back End Java, <a href="https://www.binaracademy.com/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Binar Academy (MSIB wave 5), Indonesia</a></span> <span class="whitespace-nowrap">(Aug - Dec 2023)</span>
         <br />
         <span class="font-bold">Final Score:</span> 4.7 / 5.0
         <br />
@@ -47,7 +47,7 @@
     </p>
     <ul class="list-disc pl-4 mb-4">
       <li>
-        <span class="font-bold">Web Developer Freelance</span> at <span class="font-bold"><a href="https://jayadigital.tech/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Jaya Digital</a></span> (Oct - Dec 2024)
+        <span class="font-bold">Web Developer Freelance</span> at <span class="font-bold"><a href="https://jayadigital.tech/" target="_blank" class="underline underline-offset-4 hover:text-red-600">Jaya Digital</a></span> <span class="whitespace-nowrap">(Oct - Dec 2024)</span>
         <p class="text-gray-600 text-base">Murung Raya, Kalimantan Tengah</p>
         <ul class="list-decimal pl-4 mb-2 mt-">
           <li>Enhanced and developed new features for content management web.</li>
