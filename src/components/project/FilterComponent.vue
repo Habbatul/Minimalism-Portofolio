@@ -38,7 +38,7 @@
 <script>
 export default {
   props: {
-    showFilter: Boolean, // Menentukan apakah filter dialog ditampilkan
+    showFilter: Boolean, 
     categories: {
       type: Array,
       required: true,
@@ -46,11 +46,10 @@ export default {
   },
   data() {
     return {
-      filterKategori: '', // Kategori yang dipilih, default 'All Categories'
+      filterKategori: '', 
     };
   },
   computed: {
-    // Menghasilkan daftar kategori unik dari props categories
     uniqueCategories() {
       return [...new Set(this.categories)];
     },
@@ -60,12 +59,11 @@ methods: {
     this.$emit('toggle-filter');
   },
   applyFilter(category) {
-    this.filterKategori = category; // Update kategori yang dipilih
-    this.$emit('filter', category); // Emit filter yang dipilih ke parent
+    this.filterKategori = category; 
+    this.$emit('filter', category); 
     this.toggleFilter();
   },
   handleOutsideClick(event) {
-    // Menutup filter jika pengguna klik di luar card
     if (event.target.id !== 'card') {
       this.toggleFilter();
     }

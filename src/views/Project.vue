@@ -39,7 +39,7 @@
           :categories="project.categories"
           :tags="project.tags"
           :images="project.images"
-          :link="project.url_project"
+          :link="project.url_project ? project.url_project : project.url_video"
         />
       </div>
 
@@ -103,27 +103,30 @@ export default {
         console.error('Error fetching categories:', error);
       }
     },
+
     async fetchPortfolios() {
       if (this.loading) return;
 
       this.loading = true;
+
       try {
         const response = await axios.get(`${this.baseUrl}/project`, {
           params: {
-            category: this.selectedCategory || '',
+            category: this.selectedCategory ?? '', // Nullish coalescing
             cursor: this.currentCursor,
             limit: this.itemsPerPage,
           },
         });
 
-        const data = response.data.projects || [];
-        
-        this.hasMore = data.length === this.itemsPerPage;
+        const newProjects = response.data.projects || [];
 
-        this.portfolios = [...this.portfolios, ...data];
+        this.hasMore = newProjects.length === this.itemsPerPage;
+        this.portfolios = [...this.portfolios, ...newProjects];
         this.projects = this.portfolios;
 
-        this.currentCursor = data.length ? data[data.length - 1].id : this.currentCursor;
+        if (newProjects.length) {
+          this.currentCursor = newProjects[newProjects.length - 1].order_number;
+        }
       } catch (error) {
         console.error('Error fetching portfolios:', error);
       } finally {
@@ -131,24 +134,32 @@ export default {
         this.initialLoading = false;
       }
     },
+
     applyFilter(category) {
       this.selectedCategory = category;
-      this.portfolios = [];
-      this.projects = []; 
-      this.currentCursor = 0; 
-      this.hasMore = true; 
+      this.resetPortfolios();
       this.fetchPortfolios();
     },
+
+    resetPortfolios() {
+      this.portfolios = [];
+      this.projects = [];
+      this.currentCursor = 0;
+      this.hasMore = true;
+    },
+
     loadMore() {
       if (!this.loading && this.hasMore) {
         this.fetchPortfolios();
       }
     },
+
     toggleFilter() {
       this.showFilter = !this.showFilter;
     },
   },
 };
+
 </script>
 
 

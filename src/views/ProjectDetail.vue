@@ -29,25 +29,28 @@
         </div>
                 
         <p> <span class="text-3xl font-bold font-garamond">{{ project.name }}</span></p>
-        <p class="font-garamond text-[1.1rem] font-medium mb-1">{{ project.overview }}</p>
-        <a :href="project.url_project" target="_blank" class="text-red-800 hover:text-red-500 underline font-medium font-garamond text-lg">Visit The Project</a>
+        <p class="font-garamond text-[1.3rem] font-medium mt-2 mb-1">{{ project.overview }}</p>
+
+        <a v-show="project.url_project" :href="project.url_project" target="_blank" class="text-red-800 hover:text-red-500 underline font-medium font-garamond text-lg">Visit The Project</a> 
+        <br v-show="project.url_project && project.url_video">
+        <a v-show="project.url_video" :href="project.url_video" target="_blank" class="text-red-800 hover:text-red-500 underline font-medium font-garamond text-lg">Watch Demo Project</a> 
         <div class="my-4">
         <h2 class="text-2xl font-semibold font-garamond">About this project:</h2>
-        <p class="font-garamond text-lg mt-2">{{ project.description }}</p>
+        <p class="font-garamond text-lg md:text-xl mt-2" v-html="formatDescription(project.description)"></p>
         </div>
 
         <div class="mb-4 mt-6">
 
             <p class="mb-1 ">
-                <span class="font-bold font-garamond text-lg">Tags : </span>
-                <span class="font-garamond font-medium" v-for="(tag, index) in project.tags" :key="tag">
+                <span class="font-bold font-garamond text-xl">Tags : </span>
+                <span class="font-garamond font-medium text-lg" v-for="(tag, index) in project.tags" :key="tag">
                 {{ tag }}<span v-if="index < project.tags.length - 1">, </span>
                 </span>
             </p>
 
             <p>
-                <span class="font-bold font-garamond text-lg">Category : </span>
-                <span class="font-garamond font-medium" v-for="(category, index) in project.categories" :key="category">
+                <span class="font-bold font-garamond text-xl">Category : </span>
+                <span class="font-garamond font-medium text-lg" v-for="(category, index) in project.categories" :key="category">
                 {{ category }}<span v-if="index < project.categories.length - 1">, </span>
                 </span>
             </p>
@@ -94,6 +97,7 @@ export default {
         overview: '',
         tags: [],
         url_project: '',
+        url_video: '',
       },
     };
   },
@@ -102,11 +106,56 @@ export default {
     try {
       const response = await axios.get(`${this.baseUrl}/project/${id}`);
       this.project = response.data;
+      console.log(response.data)
 
     } catch (error) {
       console.error('Failed to fetch project:', error);
     }
   },
+  methods: {
+
+  //ala-ala markdown
+  formatDescription(text) {
+  const lines = text.split('\n');
+  let result = '';
+  let inList = false;
+
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+
+  const convertLinks = (str) =>
+    str.replace(urlRegex, (url) => `<a href="${url}" class="text-red-700 hover:text-red-500 underline" target="_blank">${url}</a>`);
+
+  lines.forEach((line) => {
+    const trimmed = line.trim();
+    const isList = trimmed.startsWith('-');
+
+    if (isList) {
+      if (!inList) {
+        result += '<ul class="list-disc ml-6">';
+        inList = true;
+      }
+      const content = convertLinks(trimmed.replace(/^-+/, '').trim());
+      result += `<li>${content}</li>`;
+    } else {
+      if (inList) {
+        result += '</ul>';
+        inList = false;
+      }
+      if (trimmed === '') {
+        result += '<div class="my-2"></div>';
+      } else {
+        const content = convertLinks(trimmed);
+        result += `${content}<div class="my-2"></div>`;
+      }
+    }
+  });
+
+  if (inList) result += '</ul>';
+
+  return result;
+  }
+}
+
 };
 </script>
 
