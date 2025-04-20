@@ -8,7 +8,7 @@
         <br />
         <span class="font-bold">GPA:</span> 3.97 / 4.00
         <br />
-        Specialized coursework: Dynamic Web Programming, Web Engineering, Game Development, Applied Computer Graphics, and Software Quality Assurance.
+        Specialized Subjects : Applied Computer Graphics, Distributed System, Dynamic Web Programming, Web Engineering, Game Development, and Software Quality Assurance.
         <br>
         *9 Semesters due to a delay caused by a subject I had not taken to achieve 144 sks.
         <br />
