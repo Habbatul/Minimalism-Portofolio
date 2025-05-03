@@ -13,7 +13,7 @@
             <router-link to="/project" class="hover:underline">Project</router-link>
           </li>
           <li>
-            <a href="https://github.com/Habbatul/Guide-Documentation-NgulikPribadi" target="_blank" class="hover:underline">Tutorial</a>
+            <router-link to="/blogs" class="hover:underline">Blogs</router-link>
           </li>
           <li>
             <router-link to="/contact" class="hover:underline">Contact</router-link>
