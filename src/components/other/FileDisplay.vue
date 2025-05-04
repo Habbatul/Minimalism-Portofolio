@@ -45,7 +45,14 @@ export default{
 .prose ul { @apply list-disc pl-5 pt-1; }
 .prose li { @apply pb-1; }
 .prose ol { @apply list-decimal pl-5; }
-.prose code { @apply bg-[#e2cbb7] px-1 rounded text-base font-medium;}
+.prose code {
+    @apply bg-[#e2cbb7] px-1 rounded text-base font-medium;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
 .prose pre { @apply bg-[#e2cbb7] border border-black p-2 rounded overflow-x-auto my-2; }
 .prose a { @apply text-blue-600 hover:underline; }
 
