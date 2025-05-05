@@ -41,12 +41,12 @@ export default{
 .prose h1 { @apply text-2xl; }
 .prose h2 { @apply text-xl; }
 .prose h3 { @apply text-lg; }
-.prose p { @apply my-2 text-lg; }
+.prose p { @apply my-2 text-lg leading-7; }
 .prose ul { @apply list-disc pl-5 pt-1; }
 .prose li { @apply pb-1; }
 .prose ol { @apply list-decimal pl-5; }
 .prose code {
-    @apply bg-[#e2cbb7] px-1 rounded text-base font-medium;
+    @apply bg-[#e2cbb7] px-1 rounded text-sm font-medium;
     hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
