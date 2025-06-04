@@ -18,8 +18,8 @@
                 class="flex items-center justify-center"
                 >
                 <img 
-                    :src="image" 
-                    :alt="'Image ' + index" 
+                    :src="image.image" 
+                    :alt="'Image ' + image.id" 
                     class="h-full max-h-full w-auto object-contain"
                     style="user-select: none;-ms-user-select: none;-webkit-user-select: none;"
                 >

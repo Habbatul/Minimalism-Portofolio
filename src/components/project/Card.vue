@@ -1,22 +1,20 @@
 <template>
     <div class="inter bg-[#f5e5d3]/70 border border-black max-w-[20rem] rounded overflow-hidden shadow-[0_0px_3px_1.3px_rgba(0,0,0,0.2)] font-inter">
+
       <div class="relative group px-5 cursor-pointer flex justify-center mt-2 md:mt-5">
-        <a :href="link " target="_blank">
+        <a :href="link || '#'" target="_blank">
           <div class="relative w-[9.25rem] h-[8.5rem] md:w-64 md:h-56 overflow-hidden border-2 border-black"> 
             <img
               class="object-cover object-center w-full h-full"
-              :src="images && images[0] ? images[0] : 'https://placehold.co/256x224?text=No+Image%27'"
-              :alt="images && images[0] ? name : 'No Image Available'"
+              :src="images?.length && images[0]?.image ? images[0].image : 'https://placehold.co/256x224?text=No+Image'"
+              :alt="images?.length && images[0]?.image ? name : 'No Image Available'"
             />
-            <div
-              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-8 font-medium text-sm md:text-base"
-            >
-              Klick to Open The Project
+            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-8 font-medium text-sm md:text-base">
+              Click to Open Project
             </div>
           </div>
         </a>
       </div>
-
 
       <div class="px-5 mb-2 pt-2">
         <div class="mb-1 font-bold leading-[1.1rem] text-base md:text-xl text-center">{{ name }}</div>
